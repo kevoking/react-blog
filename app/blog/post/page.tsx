@@ -1,16 +1,11 @@
 'use client'
 
-import { db } from "@/app/firebase";
 import { Editor } from "@tinymce/tinymce-react";
-import { ref, set } from "firebase/database";
 
 export default function Post() {
 
     function publishBlog() {
-        set(ref(db, 'articles'), {
-            title: "Laravel 10 sockets app with Reverb",
-            content: "Laravel Reverb is a new first-party WebSocket server for Laravel applications, bringing real-time communication between client and server."
-        })
+        //
     }
 
     return (
